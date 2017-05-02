@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>导航</title>
+<base target="_blank" />
+<link href="//cdn-qn0.jianshu.io/assets/favicons/favicon-ea87c042cbed82f63ec4cb18d1e1bc8b.ico" rel="icon">
+<style>
+*{margin: 0;padding: 0;box-sizing: border-box;font-family: "微软雅黑";}
+body{background: #fff;}
+a{color: #333;}
+a:hover{color: #f00;}
+li{list-style:none;}
+a{text-decoration: none;}
+a:link,a:visited{color:#333; text-decoration:none;}
+a:hover,a:active{color:#c00; text-decoration:underline;}
+
+.main{width: 600px;margin: 0 auto;}
+section{overflow: hidden;border-bottom: 2px dashed #999;padding: 20px 0;}
+/*nav-style*/
+.navdl{width:200px;padding-left: 30px;float: left;overflow: hidden;}
+.navdl dt{font-size: 16px;line-height: 30px;margin-bottom: 10px;}
+.navdl dd{width: 100%;overflow: hidden;text-overflow:ellipsis;white-space:nowrap;}
+.navdl a{position:relative;overflow:hidden;padding-left:25px;height:30px;color:#1e90ff;text-decoration:none;font-size:14px;line-height:24px;}
+.navdl a:hover{color:#3498db;text-decoration:underline}
+.navdl a i{position:absolute;top:0;left:0;display:block;width:18px;height:18px;border:1px solid #aab2bd;
+border-radius:100%;color:#aab2bd;text-align:center;font-style:normal;font-size:9px;line-height:15px;}
+.navdl a.hot i{border-color:#3498db;color:#3498db;}
+
+
+.search{position:fixed;top:0;left:20px;width:300px;height:60px;}
+.search input{display:block;width:100%;height:60px;outline:0;border:none;font-size:18px;border-bottom:1px solid #333;}
+.btns span{color: #333;cursor: pointer;font-size: 14px;}
+</style>
+</head>
+<body>
+<!--头部搜索-->
+<div class="search">
+	<form action="http://www.baidu.com/baidu" target="_blank">
+		<input type="text" name="word" id="ipt1" placeholder="----.---.......">
+	</form>
+	<div class="btns">
+		<span>极简</span>
+		<span>代码</span>
+		<a href="work.html">work</a>
+	</div>
+</div>	
+<!--主要导航-->
+<div class="main">
+	<div class="item" style="dis play: none;">
+		<section>
+			<dl class="navdl">
+				<dt>笔记</dt>			
+				<dd><a href="https://www.baidu.com/">百度</a></dd>
+				<dd><a href="http://fanyi.baidu.com/?aldtype=16047#auto/zh">翻译</a></dd>
+				<dd><a href="https://www.zhihu.com/topic">知乎</a></dd>
+				<dd><a href="http://chongbuluo.99lb.net/">虫部落</a></dd>
+				<dd><a href="http://www.jianshu.com/">简书</a></dd>		
+				<dd><a href="http://note.youdao.com/">有道云笔记</a></dd>	
+				<dd><a href="http://www.weather.com.cn/">天气</a></dd>
+			</dl>	
+			<dl class="navdl">
+				<dt>爱好</dt>				
+				<dd><a href="http://www.guomai.cc/">果麦</a></dd>
+				<dd><a href="https://shuge.org/">书格</a></dd>					
+				<dd><a href="http://www.yixi.tv/">一席</a></dd>
+				<dd><a href="http://www.wufazhuce.com/">一个</a></dd>
+				<dd><a href="http://www.8264.com/pp/">8264</a></dd>
+				<dd><a href="../liwu/index.html">liwu</a></dd>
+			</dl>
+			<dl class="navdl">
+				<dt>娱乐</dt>
+				<dd><a href="http://www.panda.tv/cate/cartoon">熊猫TV</a></dd>
+				<dd><a href="http://www.pearvideo.com/">梨视频</a></dd>
+				<dd><a href="http://www.ximalaya.com/">喜马拉雅</a></dd>
+				<dd><a href="http://music.163.com/">网易云音乐</a></dd>
+				<dd><a href="http://ear.duomi.com/">邻居的耳朵</a></dd>	
+			</dl>				
+		</section>
+		<section>	
+			<dl class="navdl">
+				<dt>官方</dt>
+				<dd><a href="http://www.gov.cn/">国务院</a></dd>
+				<dd><a href="https://www.yidaiyilu.gov.cn/">一带一路</a></dd>
+				<dd><a href="http://www.cctv.com/">央视网</a></dd>
+				<dd><a href="http://www.news.cn/">新华网</a></dd>
+				<dd><a href="http://www.huanqiu.com/">环球网</a></dd>
+				<dd><a href="http://www.people.com.cn/">人民日报</a></dd>
+				<dd><a href="http://www.ftchinese.com/">FT中文网</a></dd>
+				<dd><a href="http://www.takungpao.com/">大公报</a></dd>
+				<dd><a href="http://www.un.org/">联合国</a></dd>
+				<dd><a href="https://cn.weforum.org/">世界经济论坛</a></dd>
+				<dd><a href="http://www.wicwuzhen.cn/">世界互联网大会</a></dd>
+			</dl>
+			<dl class="navdl">
+				<dt>媒体</dt>
+				<dd><a href="http://sike.news.cn/">思客</a></dd>
+				<dd><a href="http://www.thepaper.cn/">澎湃</a></dd>
+				<dd><a href="http://www.jiemian.com/">界面</a></dd>
+				<dd><a href="http://www.leiphone.com/">雷锋网</a></dd>
+				<dd><a href="http://www.enet.com.cn/">硅谷动力</a></dd>
+				<dd><a href="http://toutiao.com/">今日头条</a></dd>
+				<dd><a href="http://www.themakers.cn/">创客星球</a></dd>
+				<dd><a href="http://www.geekpark.net/">极客公园</a></dd>
+				<dd><a href="http://www.qdaily.com/">好奇心日报</a></dd>
+				<dd><a href="http://www.niubowang.com/index.asp?T=blog">牛博网</a></dd>
+			</dl>
+			<dl class="navdl">
+				<dt>极客</dt>		
+				<dd><a href="http://www.vr.cn/">VR</a></dd>
+				<dd><a href="http://www.zealer.com/">王自如</a></dd>	
+				<dd><a href="http://www.shougongke.com">手工客</a></dd>
+				<dd><a href="http://www.geekfans.com/">极客迷</a></dd>
+				<dd><a href="http://www.xiachufang.com/">下厨房</a></dd>
+				<dd><a href="http://www.zhezhiwangzi.com/">折纸博客</a></dd>		
+				<dd><a href="http://www.dili360.com/">国家地理</a></dd>
+				<dd><a href="http://jiba.niu.bi">牛</a></dd>
+				<dd><a href="http://fo.ifeng.com/dhyana/list_0/0.shtml">一日禅</a></dd>			
+			</dl>	
+		</section>	
+		<section>	
+			<dl class="navdl">
+				<dt>商界</dt>					
+				<dd><a href="http://www.yicai.com/">第一财经</a></dd>
+				<dd><a href="http://www.forbeschina.com/">福布斯</a></dd>
+				<dd><a href="https://www.chinaventure.com.cn/">投资中国</a></dd>
+				<dd><a href="http://www.iceo.com.cn/">中国企业家</a></dd>
+				<dd><a href="http://wallstreetcn.com/">华尔街见闻</a></dd>
+				<dd><a href="http://www.fortunechina.com/">财富中文网</a></dd>
+				<dd><a href="http://www.cyzone.cn/">创业邦</a></dd>
+				<dd><a href="http://cn.ceibs.edu/">中欧国际商学院</a></dd>
+			</dl>		
+			<dl class="navdl">
+				<dt>理财</dt>		
+				<dd><a href="http://newseed.pedaily.cn/">新芽</a></dd>
+				<dd><a href="http://36kr.com/">36Kr</a></dd>		
+				<dd><a href="http://www.iyiou.com/">亿欧</a></dd>
+				<dd><a href="http://www.investide.cn/">投资潮</a></dd>
+				<dd><a href="http://www.pedaily.cn/">投资界</a></dd>
+				<dd><a href="http://www.huxiu.com/">虎嗅网</a></dd>
+				<dd><a href="http://www.wabei.cn/">挖贝网</a></dd>
+				<dd><a href="http://www.pedata.cn/">私募通</a></dd>
+				<dd><a href="http://www.p5w.net/">全景网</a></dd>			
+				<dd><a href="http://www.donews.com/">donews</a></dd>
+			</dl>
+			<dl class="navdl">
+				<dt>理财</dt>		
+				<dd><a href="https://xueqiu.com/">雪球</a></dd>
+				<dd><a href="http://gu.qq.com/i/">自选股</a></dd>
+				<dd><a href="http://www.10jqka.com.cn/">同花顺</a></dd>		
+				<dd><a href="https://gupiao.baidu.com/">百度股市通</a></dd>		
+				<dd><a href="http://www.eastmoney.com/">东方财富网</a></dd>
+				<dd><a href="http://www.caixuetang.cn/">财学堂</a></dd>
+				<dd><a href="http://www.xijinfa.com/">析金法</a></dd>
+				<dd><a href="http://www.csrc.gov.cn/">证监会</a></dd>
+			</dl>		
+		</section>
+		<section>
+			<dl class="navdl">
+				<dt>工具</dt>
+				<dd><a href="http://www.tianyancha.com/">企查查</a></dd>
+				<dd><a href="http://www.qixin.com/">启信宝</a></dd>
+				<dd><a href="https://www.itjuzi.com/">IT桔子</a></dd>
+			</dl>
+			<dl class="navdl">
+				<dt>课堂</dt>			
+				<dd><a href="http://www.chuanke.com/">百度传课</a></dd>
+				<dd><a href="http://ke.qq.com/">腾讯课程</a></dd>
+				<dd><a href="http://open.163.com/">网易公开课</a></dd>
+				<dd><a href="http://open.sina.com.cn/">新浪公开课</a></dd>
+				<dd><a href="http://open.163.com/special/opencourse/financialtheory.html">耶鲁大学公开课：金融理论</a></dd>
+			</dl>
+			<dl class="navdl">
+				<dt>活动</dt>
+				<dd><a href="http://www.huodongxing.com/">活动行</a></dd>
+				<dd><a href="http://naotu.baidu.com/">百度脑图</a></dd>
+			</dl>
+		</section>
+		<section>
+			<dl class="navdl">
+				<dt>败家</dt>
+				<dd><a href="https://www.tmall.com/">天猫</a></dd>
+				<dd><a href="https://www.taobao.com/">淘宝</a></dd>
+				<dd><a href="http://www.jd.com/">京东</a></dd>
+				<dd><a href="http://www.dangdang.com/">当当</a></dd>
+				<dd><a href="https://www.amazon.cn">亚马逊</a></dd>
+				<dd><a href="http://you.163.com/">网易严选</a></dd>
+				<dd><a href="http://www.xgimi.com/">极米电视</a></dd>
+				<dd><a href="http://www.smartisan.com/">锤子</a></dd>
+				<dd><a href="http://www.meizu.com/">魅族</a></dd>
+				<dd><a href="http://www.mi.com/">小米</a></dd>
+				<dd><a href="http://www.apple.com/cn/">苹果</a></dd>
+			</dl>
+		</section>
+	</div>
+	<div class="item" style="display:none;">
+		<section>
+			<dl class="navdl">
+				<dt>博客</dt>
+				<dd><a href="http://www.bootcdn.cn/">bootcdn</a></dd>
+				<dd><a href="https://www.qiniu.com/">七牛云</a></dd>
+				<dd><a href="https://github.com/">github</a></dd>
+				<dd><a href="https://wanwang.aliyun.com/">阿里云</a></dd>
+				<dd><a href="https://www.qcloud.com/">腾讯云</a></dd>
+				<dd><a href="https://cloud.baidu.com">百度云</a></dd>
+			</dl>
+			<dl class="navdl">
+				<dt>社区</dt>
+				<dd><a href="http://www.w3cfuns.com/">前端网</a></dd>
+				<dd><a href="http://www.chinaw3c.org/">w3c中国</a></dd>
+				<dd><a href="http://www.runoob.com/">菜鸟教程</a></dd>
+				<dd><a href="http://www.w3cschool.cn/">w3cschool</a></dd>
+				<dd><a href="http://www.cnblogs.com/">博客园</a></dd>
+				<dd><a href="http://www.nowcoder.com/">牛客网</a></dd>
+				<dd><a href="http://div.io/">div</a></dd>
+				<dd><a href="http://gold.xitu.io/">稀土掘金</a></dd>
+				<dd><a href="http://e.xitu.io/">稀土掘土酱</a></dd>
+				<dd><a href="http://www.csdn.net/">CSDN</a></dd>
+				<dd><a href="http://qianduanfan.com/">前端范</a></dd>
+				<dd><a href="http://fex.baidu.com/">百度</a></dd>
+				<dd><a href="http://www.alloyteam.com/">腾讯</a></dd>
+				<dd><a href="http://taobaofed.org/">Taobao FED</a></dd>
+				<dd><a href="https://www.v2ex.com/">v2ex</a></dd>
+				<dd><a href="http://segmentfault.com/">segmentfault</a></dd>
+				<dd><a href="http://www.open-open.com/">深度社区</a></dd>
+				<dd><a href="https://www.oschina.net/">开源社区</a></dd>
+			</dl>	
+			<dl class="navdl">
+				<dt>在线tool</dt>		
+				<dd><a href="http://code.ciaoca.com/">开发仓库</a></dd>
+				<dd><a href="http://f2er.club">醉牛前端</a></dd>
+				<dd><a href="http://tool.chinaz.com/Tools/CssFormat.aspx">js互转</a></dd>
+				<dd><a href="http://tool.oschina.net/">tool.oschina</a></dd>
+				<dd><a href="http://runjs.cn/">runjs</a></dd>				
+				<dd><a href="http://jsrun.net/">jsrun</a></dd>
+				<dd><a href="http://www.css3maker.com/index.html">css生成器</a></dd>
+				<dd><a href="http://www.css88.com/tool/css3Preview/">css生成器</a></dd>
+			</dl>
+		</section>
+		<section>	
+			<dl class="navdl">
+				<dt>视频</dt>		
+				<dd><a href="http://ninghao.net">宁浩</a></dd>
+				<dd><a href="http://www.imooc.com/">慕课网</a></dd>
+				<dd><a href="https://www.shiyanlou.com/">实验楼</a></dd>
+				<dd><a href="http://www.miaov.com/">妙趣课堂</a></dd>
+				<dd><a href="http://www.liaoxuefeng.com/">廖雪峰</a></dd>
+				<dd><a href="http://www.ruanyifeng.com">阮一峰</a></dd>
+				<dd><a href="http://www.zhangxinxu.com/">鑫空间</a></dd>
+				<dd><a href="http://www.cnblogs.com/lhb25/">梦想空间</a></dd>
+				<dd><a href="http://www.520ued.com/">520ued</a></dd>
+				<dd><a href="https://s5s5.me/">s5s5</a></dd>
+				<dd><a href="http://www.shejidaren.com/">设计达人</a></dd>
+				<dd><a href="http://ghmagical.com/">铁锅</a></dd>
+				<dd><a href="https://imququ.com/">屈光宇</a></dd>
+				<dd><a href="http://oldj.net/">oldj's blog</a></dd>
+				<dd><a href="http://ideazhao.com">灵感的小窝</a></dd>
+				<dd><a href="http://blog.cssforest.org/">森林</a></dd>
+				<dd><a href="http://szhshp.org/">szhshp</a></dd>
+			</dl>			
+			<dl class="navdl">
+				<dt>框架</dt>
+				<dd><a href="http://daneden.github.io/animate.css/">Animate</a></dd>
+				<dd><a href="http://www.dowebok.com/demo/2014/98/">Animate中文</a></dd>
+				<dd><a href="http://www.bootcss.com/">bootstrop</a></dd>
+				<dd><a href="http://www.swiper.com.cn/">swiper</a></dd>
+				<dd><a href="http://www.layui.com/">layui</a></dd>
+				<dd><a href="http://amazeui.org/">Amazeui</a></dd>
+				<dd><a href="https://cnodejs.org/">cnodejs</a></dd>
+				<dd><a href="http://ruby-china.org/">ruby-china</a></dd>
+				<dd><a href="http://www.bootcss.com/p/font-awesome/">awesome</a></dd>
+				<dd><a href="http://fontawesome.dashgame.com/">awesome</a></dd>
+				<dd><a href="http://demo.jb51.net/js/myfocus/">myfocus焦点图</a></dd>
+				<dd><a href="http://alvarotrigo.com/blog/">fullPage.js</a></dd>
+				<dd><a href="http://www.turnjs.com/">turn.js</a></dd>
+			</dl>
+			<dl class="navdl">
+				<dt>源码</dt>
+				<dd><a href="http://www.dowebok.com/">dowebok</a></dd>
+				<dd><a href="http://www.html5tricks.com/">html5tricks</a></dd>
+				<dd><a href="http://www.aseoe.com/texiao/">texiao</a></dd>
+				<dd><a href="https://threejs.org/">threejs</a></dd>
+				<dd><a href="http://www.jq22.com/">jq22</a></dd>
+				<dd><a href="http://www.jqueryfuns.com/">jqueryfuns</a></dd>
+				<dd><a href="http://www.htmleaf.com/">jQ插件</a></dd>
+				<dd><a href="http://www.w2bc.com/">爱编程</a></dd>
+				<dd><a href="http://www.17sucai.com/">17素材</a></dd>			
+			</dl>		
+			
+		</section>
+		<section>
+			<dl class="navdl">
+				<dt>故事</dt>
+				<dd><a href="http://www.xiaoxili.com/">xiaoxili</a></dd>
+				<dd><a href="http://www.lzren.org/">一个人旅行</a></dd>
+				<dd><a href="http://www.yinwang.org/">当然我在扯淡</a></dd>
+				<dd><a href="https://www.byvoid.com">郭家宝</a></dd>
+				<dd><a href="http://www.pdmb.org/">pdmb</a></dd>	
+				<dd><a href="http://www.102no.com/wordpress/">102no</a></dd>
+				<dd><a href="http://dbanotes.net/">闲思录</a></dd>
+				<dd><a href="http://fangkc.cn/">方可成</a></dd>
+				<dd><a href="http://www.yangzhiping.com/">阳志平</a></dd>
+				<dd><a href="https://joway.wang/">城西笔谈</a></dd>
+				<dd><a href="http://cnberg.div.io/">冰山一角</a></dd>
+				<dd><a href="http://blog.farmostwood.net/sitemap">木遥的窗子</a></dd>
+			</dl>
+			<dl class="navdl">
+				<dt>技术博客</dt>
+				<dd><a href="http://www.maintao.com/">闷道</a></dd>
+				<dd><a href="http://www.99css.com/">99css</a></dd>
+				<dd><a href="http://redraiment.com/">子清行</a></dd>
+				<dd><a href="http://www.jtianling.com/">九天雁翎</a></dd>
+				<dd><a href="https://www.gracecode.com/">gracecode</a></dd>
+				<dd><a href="http://kayosite.com/">kayosite</a></dd>
+				<dd><a href="http://www.haorooms.com/">haorooms</a></dd>
+				<dd><a href="http://www.aicoffees.com/">圆圆</a></dd>
+				<dd><a href="http://www.jzdlink.com/">情侣博客</a></dd>
+				<dd><a href="http://happypeter.github.io/">happypeter-开源</a></dd>
+				<dd><a href="http://baixin.io/">潘柏信</a></dd>
+				<dd><a href="http://www.cnblogs.com/xing901022/">xinggoo</a></dd>
+				<dd><a href="http://rauchg.com/">rauchg</a></dd>
+				<dd><a href="http://slax.me/">slax</a></dd>
+				<dd><a href="http://iissnan.com/">Vi</a></dd>
+			</dl>
+			<dl class="navdl">
+				<dt>代码图书</dt>
+				<dd><a href="http://www.ituring.com.cn/">图灵社区</a></dd>
+				<dd><a href="http://www.epubit.com.cn/">异步社区</a></dd>
+				<dd><a href="http://www.fenby.com/">fenby</a></dd>
+				<dd><a href="http://www.ituring.com.cn/minibook/303">Angular</a></dd>
+				<dd><a href="http://iissnan.com/progit/">git简体中文版</a></dd>
+				<dd><a href="https://git-scm.com/book/zh/v2/%E8%B5%B7%E6%AD%A5-%E5%85%B3%E4%BA%8E%E7%89%88%E6%9C%AC%E6%8E%A7%E5%88%B6">Git</a></dd>
+				<dd><a href="http://linux.vbird.org/">鸟哥linux</a></dd>
+				<dd><a href="https://www.gitbook.com/">gitbook</a></dd>
+				<dd><a href="http://www.sxrczx.com/docs/js/2286877.html">汤姆大叔《深入理解js》</a></dd>
+				<dd><a href="http://caibaojian.com/book/">前端教程手册</a></dd>
+				<dd><a href="http://es6.ruanyifeng.com/">ECMAScript 6入门</a></dd>
+				<dd><a href="http://bonsaiden.github.io/JavaScript-Garden/zh/">JavaScript 秘密花园</a></dd>
+				<dd><a href="http://docs.huihoo.com/jquery/jquery-fundamentals/zh-cn/index.html">jQuery 基本原理</a></dd>
+				<dd><a href="http://pij.robinqu.me/">JavaScript1</a></dd>
+				<dd><a href="http://javascript.ruanyifeng.com/">JavaScript2</a></dd>
+				<dd><a href="https://www.zybuluo.com/EncyKe/note/141699">jQuery1</a></dd>
+				<dd><a href="https://developer.mozilla.org/zh-CN/docs/Web/JavaScript">mozilla</a></dd>
+				<dd><a href="http://alloyteam.github.io/CodeGuide/">腾讯规范</a></dd>
+			</dl>
+		</section>
+	</div>
+</div>
+
+<script src="http://cdn.bootcss.com/jquery/3.2.1/jquery.min.js"></script>
+<script type="text/javascript">
+$(function(){
+	//	添加序列号
+	var alink=$(".navdl");
+	for(var i=0;i<alink.length;i++){
+		for(var j=0;j<alink.eq(i).children().length;j++){
+			alink.eq(i).children('dd').eq(j).children('a').prepend("<i>"+(j+1)+"</i>");
+			alink.eq(i).children('dd').eq(2).children('a').addClass("hot");
+		}
+	}	
+	//	添加最新标注
+	for(var k=0;k<2;k++){
+		alink.each(function(){
+			$(this).children('dd').eq(k).children('a').addClass("hot");
+		})
+	}
+	//tab
+	$(function(){
+		var aTbtn=$('.tBtn button');
+		var aTbox=$('.tBox').children('div');
+		aTbtn.click(function(){
+			aTbtn.removeClass();
+			$(this).parents('.tab').find('.tBox >div').hide();
+			$(this).addClass('active');
+			var index=$(this).index();			
+		})
+	})
+	$('.btns span').click(function(){
+		$('.main').find('.item').hide().eq($(this).index()).show();
+	})
+
+})
+
+
+	
+</script>
+</body>
+</html>
