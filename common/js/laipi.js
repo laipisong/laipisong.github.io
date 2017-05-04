@@ -3,7 +3,7 @@ document.writeln("<meta name=\'viewport\' content=\'width=device-width, initial-
 document.writeln("<meta content=\'yes\' name=\'apple-mobile-web-app-capable\' />");
 document.writeln("<meta content=\'black\' name=\'apple-mobile-web-app-status-bar-style\' />");
 document.writeln("<meta content=\'telephone=no\' name=\'format-detection\' />");
-
+document.writeln("<script src=\'http://cdn.bootcss.com/jquery/3.2.1/jquery.slim.min.js\'></script>");
 
 
 
@@ -12,3 +12,4 @@ document.writeln("<meta content=\'telephone=no\' name=\'format-detection\' />");
 //<meta content="yes" name="apple-mobile-web-app-capable" />
 //<meta content="black" name="apple-mobile-web-app-status-bar-style" />
 //<meta content="telephone=no" name="format-detection" />
+//<script src="http://cdn.bootcss.com/jquery/3.2.1/jquery.slim.min.js"></script>
