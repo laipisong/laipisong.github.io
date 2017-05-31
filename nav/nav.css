@@ -10,8 +10,6 @@ section{display:block;overflow:hidden;margin-bottom:20px;width:100%;}
 /*top_search*/	
 .search{overflow:hidden;width:100%;height:60px;}
 .search input{display:block;width:100%;height:60px;outline:0;border:none;font-size:18px;padding-left: 300px;}
-
-
 /*sidebar_menu*/
 .sidebar{position: fixed;width:150px;height: 100%;padding:10px;top: 50px;right: 20px;font-family: comic sans ms;}	
 .sidebar a{display: block;color: #666;font-size: 20px;line-height: 40px;text-decoration: none;}
