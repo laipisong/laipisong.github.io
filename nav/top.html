@@ -3,11 +3,32 @@
 <head>
 <meta charset="UTF-8">
 <title></title>
-<link rel="stylesheet" type="text/css" href="nav.css"/>
+<style type="text/css">
+/*reset*/
+*{margin: 0;padding: 0;box-sizing: border-box;color: #666;font-family: "微软雅黑";}
+h3{font-size: 14px;color: #000;margin-bottom: 10px;font-weight: 400;}
+section{display:block;overflow:hidden;width:100%;}
+	
+/*top_search*/	
+.search{overflow:hidden;width:100%;height:50px;}
+.search input{display:block;width:100%;height:50px;outline:0;border:none;font-size:18px;padding-left: 300px;}
+/*sidebar_menu*/
+.sidebar{position: fixed;width:150px;height: 100%;padding:10px;top: 50px;right: 20px;font-family: comic sans ms;}	
+.sidebar a{display: block;color: #666;font-size: 20px;line-height: 40px;text-decoration: none;}
+.sidebar a:hover{color: red;text-decoration: underline;}
+	
+.menu{position: absolute;top: 15px;left: 20px;}	
+</style>
 </head>
 <body>
 <!--头部搜索-->
 <div class="search">
+	<div class="menu">
+		<a target="main" href="gold.html">新闻</a>	
+		<a target="main" href="life.html">生活</a>	
+		<a target="main" href="code.html">程序</a>	
+		<a target="_blank" href="https://www.baidu.com/">百度</a>	
+	</div>
 	<form action="http://www.baidu.com/baidu" target="_blank">
 		<input type="text" name="word" id="ipt1" placeholder="世界这么大，我们彼此相遇。然后，东告西别。">
 	</form>
