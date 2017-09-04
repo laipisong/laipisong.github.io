@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+<title>礼物</title>
+<style type="text/css">
+/*reset*/	
+*{margin: 0;padding: 0;}
+body{font-family: "微软雅黑";}
+/*礼物*/
+.liwu{position: absolute;top: 50%;left: 50%;margin-left: -300px;margin-top:-300px;width: 600px;height: 300px;padding: 20px;}
+.liwu h1{color: #21759B;line-height: 80px;}
+p{font-size: 18px;line-height: 28px;}
+</style>
+</head>
+<body>
+
+
+<!--礼物-->
+<div class="liwu">
+	<h1>礼物</h1>
+	<p>
+	生活就是一场礼物的派送！	<br />
+	有别人的，有自己的<br />
+	有认识的，也有陌生的<br />
+	每一次相遇，每一次别离<br />
+	身边都会堆满各式各样的礼物<br />
+	有你喜欢的，也有你不喜欢的。<br />
+	过往曾经和这未来的不确定便是这人生最好的礼物。<br /><br />
+	如若岁月静好，还请别来无恙！
+	</p>
+	
+</div>
+
+
+
+
+<div class="lovestory">
+	<div id="autotype">
+		<p>1978年，75位诺贝尔奖获得者在巴黎聚会。</p>
+		<p>有人问其中一位："你在哪所大学、哪所实验室里学到了你认为最重要的东西呢?"</p>
+		<p>出人意料，这位白发苍苍的学者回答说："是在幼儿园。"</p>
+		<p>又问："在幼儿园里学到了什么呢?"</p>
+		<p>学者答："把自己的东西分一半给小伙伴们；不是自己的东西不要拿；东西要放整齐，饭前要洗手，午饭后要休息；做了错事要表示歉意；学习要多思考，要仔细观察大自然。从根本上说，我学到的全部东西就是这些。"</p>
+	</div>
+</div>
+
+
+<script src="http://cdn.bootcss.com/jquery/3.1.1/jquery.min.js"></script>
+
+<!--打印文字动态js-->
+<script>
+    $.fn.autotype = function() {
+     var timer=null;
+      var _this=$(this);
+      var str=_this.html();
+      // 正则替换代码行之间添加的多个空格，不去除换行输出会有明显的停顿：实际是在输出多个空格
+      str=str.replace(/(\s){2,}/g,"$1");
+        var index = 0;
+        $(this).html('');
+        var printer = function() {
+            var args=arguments;
+            var current = str.slice(index, index+1);
+            // html标签完整输出,如：<p>
+            if (current == '<'){
+                index = str.indexOf('>', index) + 1;
+            }
+            else{
+            index++;
+            }
+           timer= setTimeout(args.callee,70);
+            //位运算符: 根据setInterval运行奇偶次来判断是否加入下划线字符“_”，使输入效果更逼真
+            if (index < str.length-1){ //打印字符倒数第2个字符开始，不加下划线字符，以防止结束符可能会多输出一下划线字符
+                _this.html(str.substring(0, index) + (index & 1 ? '_' : ''));
+            }else{
+                _this.html(str.substring(0, index));
+                clearTimeout(timer);
+            };
+        };
+        // 延迟1s开始
+        setTimeout(printer,8000);
+    };
+    $("#autotype").autotype();
+</script>
+</body>
+</html>

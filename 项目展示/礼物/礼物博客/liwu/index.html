@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>@礼物</title>
+<base target="_blank" />
+<script src="http://laipi.win/common/js/laipi.js" charset="utf-8"></script>	
+<style type="text/css">
+*{margin: 0;padding: 0;box-sizing: border-box;font-family: "微软雅黑";}
+body{background: #fff;}
+a{color: #333;}
+a:hover{color: #f00;}
+li{list-style:none;}
+a{text-decoration: none;}
+a:link,a:visited{color:#333; text-decoration:none;}
+a:hover,a:active{color:#c00; text-decoration:underline;}
+.main{max-width: 250px;min-width:100px;margin: 60px auto 100px;}
+section{overflow: hidden;border-bottom: 2px dashed #999;padding: 20px 0;}
+/*nav-style*/
+.navdl{width:200px;padding-left: 30px;float: left;overflow: hidden;}
+.navdl dt{font-size: 16px;line-height: 30px;margin-bottom: 10px;}
+.navdl dd{width: 100%;overflow: hidden;text-overflow:ellipsis;white-space:nowrap;}
+.navdl a{position:relative;overflow:hidden;padding-left:25px;height:30px;color:#1e90ff;text-decoration:none;font-size:14px;line-height:24px;}
+.navdl a:hover{color:#3498db;text-decoration:underline}
+.navdl a i{position:absolute;top:0;left:0;display:block;width:18px;height:18px;border:1px solid #aab2bd;
+border-radius:100%;color:#aab2bd;text-align:center;font-style:normal;font-size:9px;line-height:15px;}
+.navdl a.hot i{border-color:#3498db;color:#3498db;}
+
+</style>
+</head>
+<body>
+<div class="main">
+	<section>
+		<dl class="navdl">
+			<dt>章节一</dt>			
+			<dd><a href="章节一/恋恋风尘.html">恋恋风尘</a></dd>
+			<dd><a href="章节一/一封书信.html">一封书信</a></dd>
+			<dd><a href="章节一/那年说说.html">那年说说</a></dd>
+			<dd><a href="章节一/赖皮有故事.html">赖皮有故事</a></dd>
+			<dd><a href="章节一/实景写生.html">实景写生</a></dd>
+			<dd><a href="章节一/年报.html">年报</a></dd>
+			<dd><a href="章节一/汪国真.html">汪国真</a></dd>
+			<dd><a href="章节一/理想的生活.html">理想的生活</a></dd>
+			<dd><a href="章节一/赖皮的诗.html">赖皮的诗</a></dd>
+			<dd><a href="章节一/美文阅读.html">美文阅读</a></dd>
+			<dd><a href="章节一/极简.html">极简</a></dd>
+			<dd><a href="章节一/寻一杯风花雪月酒.html">寻一杯风花雪月酒</a></dd>
+			<dd><a href="章节一/影视贫道.html">影视贫道</a></dd>
+			<dd><a href="章节一/文字书法.html">文字书法</a></dd>
+			<dd><a href="章节一/诗歌.html">诗歌</a></dd>
+		</dl>	
+		<dl class="navdl">
+			<dt>章节二</dt>			
+			<dd><a href="章节二/股票基本面.html">股票基本面</a></dd>
+			<dd><a href="章节二/股票技术面.html">股票技术面</a></dd>
+			<dd><a href="章节二/股票散文.html">股票散文</a></dd>
+		</dl>
+		<dl class="navdl">
+			<dt>章节三</dt>			
+			<dd><a href="章节三/好奇心.html">好奇心</a></dd>
+		</dl>
+	</section>
+</div>
+
+<script src="http://cdn.bootcss.com/jquery/3.2.1/jquery.min.js"></script>
+<script type="text/javascript">
+$(function(){
+	//	添加序列号
+	var alink=$(".navdl");
+	for(var i=0;i<alink.length;i++){
+		for(var j=0;j<alink.eq(i).children().length;j++){
+			alink.eq(i).children('dd').eq(j).children('a').prepend("<i>"+(j+1)+"</i>");
+			alink.eq(i).children('dd').eq(2).children('a').addClass("hot");
+		}
+	}	
+	//	添加最新标注
+	for(var k=0;k<2;k++){
+		alink.each(function(){
+			$(this).children('dd').eq(k).children('a').addClass("hot");
+		})
+	}
+
+})
+
+
+	
+</script>
+</body>
+</html>
