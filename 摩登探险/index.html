@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>赖皮的礼物</title>
+<style type="text/css">
+.dt_logo{width: 300px;height: 300px;margin: 100px auto;border-radius: 50%;overflow: hidden;border:5px solid #9cd6f3;}
+.dt_logo img{width: 100%;height: 100%;}
+
+/*动画样式*/
+
+
+
+.a_rotate1{
+-webkit-transform: rotate(360deg);
+animation: a_rotate1 3s linear infinite;
+-moz-animation: a_rotate1 3s linear infinite;
+-webkit-animation: a_rotate1 3s linear infinite;
+-o-animation: a_rotate1 3s linear infinite;
+}
+@-webkit-keyframes a_rotate1{from {-webkit-transform: rotate(0deg);}to {-webkit-transform: rotate(360deg);}}
+
+
+.a_rotate2 {-webkit-animation:a_rotate2 3s ease 0s alternate none infinite;}
+.a_rotate2 {-moz-animation:a_rotate2 3s ease 0s alternate none infinite;}
+.a_rotate2 {animation:a_rotate2 3s ease 0s alternate none infinite;}
+@-webkit-keyframes a_rotate2 { from{-webkit-transform:rotate(0deg); } to{-webkit-transform:rotate(360deg); } }
+@-moz-keyframes a_rotate2 { from{-moz-transform:rotate(0deg); } to{-moz-transform:rotate(360deg); } }
+@keyframes a_rotate2 { from{transform:rotate(0deg); } to{transform:rotate(360deg); } }	
+</style>
+</head>
+<body>
+
+<div class="dt_logo a_rotate1"><img src="img/lpdlw.jpg"/></div>
+<div class="btn">468464</div>
+
+<script src="https://cdn.bootcss.com/jquery/3.2.1/jquery.min.js"></script>
+<script type="text/javascript">
+$('.btn,.dt_logo').click(function(){
+	$('.dt_logo').toggleClass('a_rotate1');
+})
+</script>
+</body>
+</html>
