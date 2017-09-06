@@ -403,12 +403,21 @@
     }
     reset();
     $("#more_list").on("click", function () {
-	      $("html,body").css("height", "100%");
-	      $("html,body").css("overflow", "hidden");
-        $(".mengceng").eq(0).show();
-        $(".kemu_warp").slideDown();
-		
+			 if(!$(this).hasClass('zhankai')){
+					  $("#more_list").addClass('zhankai');
+					  $("html,body").css("height", "100%");
+				      $("html,body").css("overflow", "hidden");
+			        $(".mengceng").eq(0).show();
+			        $(".kemu_warp").slideDown();
+				}else{    				
+					  $("#more_list").removeClass('zhankai');
+					  Tcgb();
+				}
+				return;
     })
+    
+    
+   
 	function Tcgb(){
 	      $("html,body").css("height", "100%");
 	      $("html,body").css("overflow", "hidden");
