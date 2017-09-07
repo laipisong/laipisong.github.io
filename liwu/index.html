@@ -5,11 +5,12 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0" />
 <meta name="format-detection" content="telephone=no" />
+<link rel="shortcut icon" type="image/ico" href="http://laipi.win/favicon.ico">
 <base target="_blank" />
 <title>@礼物</title>
 <style>
 *{margin: 0;padding: 0;box-sizing: border-box;}	
-body {font-size: 22px;overflow: hidden;width: 100%;height: 100%;background: #e9dfc4;font-family: "微软雅黑";}
+body {font-size: 22px;overflow: hidden;width: 100%;height: 100%;background: #fff;font-family: "微软雅黑";}
 .content{width: 90%;overflow: hidden;margin: 0 auto;}
 .navdl{width:200px;padding: 10px;}
 .navdl dt{font-size: 20px;line-height: 30px;margin-bottom: 30px;}
@@ -18,7 +19,8 @@ body {font-size: 22px;overflow: hidden;width: 100%;height: 100%;background: #e9d
 .navdl a:hover{color:#3498db;text-decoration:underline}
 .navdl a i{position:absolute;top:0;left:0;display:block;width:18px;height:18px;border:1px solid #aab2bd;
 border-radius:100%;color:#aab2bd;text-align:center;font-style:normal;font-size:9pt;line-height:1pc}
-.navdl a.hot i{border-color:#3498db;color:#3498db;}
+.navdl dd.hot a{border-color:#3498db;color:#3498db;}
+.navdl dd.hot a i{border-color:#3498db;color:#3498db;}
 
 
 #background_video{position: fixed;}
@@ -76,9 +78,9 @@ for(var i=0;i<alink.length;i++){
 }
 
 //	添加最新标注
-for(var k=0;k<2;k++){
+for(var k=0;k<3;k++){
 	alink.each(function(){
-		$(this).children('dd').eq(k).children('a').addClass("hot");
+		$(this).children('dd').eq(k).addClass("hot");
 	})
 }	
 </script>
