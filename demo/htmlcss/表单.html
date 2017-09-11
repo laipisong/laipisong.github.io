@@ -1,0 +1,57 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<title>添加文本域</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+</head>
+<body>
+<h3>兴趣调查：</h3>
+
+<form action="表单的处理程序" name="表单名称" method="传送方式" enctype="编码方式" target="目标窗口打开方式">
+
+		   <!--在页面中添加一个普通按钮-->
+	       <input type="button" value="普通按钮" name="buttom1" />
+	       <!--在页面中添加一个关闭当前窗口-->
+	       <input type="button" value="关闭当前窗口" name="close" onclick="window.close()"/>
+	       <!--在页面中添加一个打开新窗口的按钮-->
+	       <input type="button" value="打开窗口" name="opennew" onclick="window.open()" />
+
+
+	用户名：<input name="username" type="text" size="20" id="username" /><br /><br />
+    密码：	<input name="password" type="password" size="20" maxlength="8"/><br /><br />
+    性别：	<input type="radio" name="1" value="男"  />男
+		    <input type="radio" name="1" value="女"  />女<br/><br/>
+	爱好：
+    <input type="checkbox" name="m1" value="羽毛球"/>羽毛球
+    <input type="checkbox" name="m2" value="旅游"/>旅游
+    <input type="checkbox" name="m3" value="读书"  />读书<br/><br/>
+	    
+    请上传你的照片：<input type="file" name="file" /><br/><br/>
+
+    请选择你喜欢的音乐：<br /><br />
+		    <select name="music" size="5" multiple="multiple">
+		        <option value="rock" selected="selected">摇滚乐 </option>
+		        <option value="rock">流行乐 </option>
+		        <option value="rock">爵士乐 </option>
+		        <option value="rock">民族乐 </option>
+		        <option value="dj">打击乐 </option>
+		    </select>
+
+    <br /><br />
+    你喜欢的城市：  
+	      	<select name="city">
+		      	<option value="beijing" selected="selected">北京</option>
+		        <option value="shanghai" >上海</option>
+		        <option value="nangjing">南京</option>
+		        <option value="changchun">长春</option>
+	       	</select>
+	<br /><br />
+	留言：  <textarea name="liuyan"  rows="5" cols="40">	testarea	</textarea><br /><br />
+    		<input type="submit" name="submit" value="提交" />
+    		<input type="reset" name="reset" value="重置">
+    		<input type="image" src="http://cdn.res.qdfuns.com/images/logos/logo.png" name="image1" />
+
+</form>
+</body>
+</html>
