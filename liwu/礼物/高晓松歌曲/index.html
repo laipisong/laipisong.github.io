@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title></title>
+<link rel="shortcut icon" type="image/ico" href="http://laipi.win/favicon.ico">
+<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.4.2/css/swiper.min.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.4.2/js/swiper.min.js"></script>
+<script src="http://cdn.bootcss.com/jquery/3.2.1/jquery.min.js"></script>
+<style>
+/*swiper*/	
+html,body {position:relative;height:100%;font-family: "微软雅黑";overflow: hidden;}
+body {background:#f2dbb7;color:#000;margin:0;padding:0;}
+.swiper-container {width:100%;height:100%;margin-left:auto;margin-right:auto;overflow: hidden;}
+.swiper-slide {padding-top: 50px;}
+	
+/*song*/
+.song{width: 1000px;margin: 0 auto;}
+.song pre{font-size: 20px;line-height: 30px;font-weight: bold;}
+
+#menu{position: fixed;top: 50px;left: 20px;transform: translate3d(0,-20px,0);}
+#menu .swiper-pagination-bullet{width: 160px;height: 30px;border-radius: 6px;color: #0ff;line-height: 30px;}
+</style>
+</head>
+<body>
+	
+
+<!-- Swiper -->
+<div class="swiper-container">
+    <div class="swiper-wrapper" id="show">
+    	<div class="swiper-slide">
+    		<div class="song">
+    			<pre>
+立秋
+
+你坐在椅子上看着窗外流过的光
+你伸出双手摸着纸上写下的希望
+你说花开了又落象是一扇窗
+可是窗开了有关相爱的模样
+
+你举着一枝花等着有人带你去流浪
+你想睡去在远方向一个美丽童话
+那本书合了又开漂落下梦想
+我们俩合了又分象一对船桨
+
+总要有些随风 有些入梦
+有些长留在心中
+于是有时疯狂 有时迷惘 
+有时唱  				
+    			</pre>
+    		</div>
+    	</div>
+    	<div class="swiper-slide">
+    		<div class="song">
+    			<pre>
+冬至
+
+你和冬天一样来得迟
+胸前挂着一把明媚的钥匙
+你要等雪花把头发淋湿
+你要做一件晴朗的事
+你说山会拉着你回家
+他会让你不再害怕天涯
+他会陪你看满天红的霞
+看你像花一样长大
+为什么天上有月亮
+为什么地上有远方
+为什么眼睛有泪光
+看得天地之间一片白茫茫
+为什么四季要歌唱
+为什么我们要成长
+为什么有那么多墙
+所有漫长的路越走越漫长
+漫长    				
+    			</pre>
+    		</div>
+    	</div>
+    	<div class="swiper-slide">
+    		<div class="song">
+    			<pre>
+白衣飘飘的年代（顾城之一）
+
+
+当秋风停在了你的发梢在红红的夕阳肩上
+你注视着树叶清晰的脉搏她翩翩的应声而落
+你沉默倾听着那一声驼铃像一封古早的信
+你转过了身深锁上了门再无人相问
+
+那夜夜不停有婴儿啼哭为未知的前生模样
+那早榭的花开在泥土下面等潇潇的雨洒满天
+每一次你仰起慌张的脸看云起云落变迁
+冬等不到春春等不到秋等不到白首
+
+还是走吧甩一甩头，在这夜凉如水的路口
+那唱歌的少年已不在风里面你
+还在怀念
+那一片白衣飘飘的年代
+那白衣飘飘的年代
+那白衣飘飘的年代
+那白衣飘飘的年代    				
+    			</pre>
+    		</div>
+    	</div>
+    	<div class="swiper-slide">
+    		<div class="song">
+    			<pre>
+月亮
+
+一直到星星闭上眼睛
+一直到黑夜哄睡了爱情
+一直到秋天欲说又远行
+一直到忽然间你惊醒
+大雨如注 风在林梢
+海上舟摇 楼上帘招
+你知道他们终于来到
+你是唱挽歌, 还是祈祷
+有一天孩子们问我
+那本书写的是什么
+我说什么我说什么
+我为什么我为什么唱起了歌
+我唱起了歌
+哪一天落山风吹过海洋
+那呜咽声仿佛少年泪光
+有多少人 会打开窗
+有多少人 痴痴的望
+那么蓝的月亮
+那遥远的月亮 月亮		
+    			</pre>
+    		</div>
+    	</div>
+    	<div class="swiper-slide">
+    		<div class="song">
+    			<pre>
+    				
+    			</pre>
+    		</div>
+    	</div>
+    	<div class="swiper-slide">
+    		<div class="song">
+    			<pre>
+    				
+    			</pre>
+    		</div>
+    	</div>
+    	<!--<div class="swiper-slide">
+    		<div class="song">
+    			<pre>
+    				
+    			</pre>
+    		</div>
+    	</div>-->
+    </div>    	
+    <!-- Add Pagination -->
+    <div class="swiper-pagination"></div>
+    <div class="swiper-pagination" id="menu"></div>
+</div>
+<script>
+var swiper = new Swiper('.swiper-container', {
+    pagination: '.swiper-pagination',
+    direction: 'vertical',
+    slidesPerView: 1,
+    paginationClickable: true,
+    spaceBetween: 30,
+    mousewheelControl: true
+});
+</script>
+<script type="text/javascript">
+	var sname = new Array(
+		"立秋",
+		"冬至",
+		"白衣飘飘的年代",
+		"月亮"
+	);
+
+	$("#menu .swiper-pagination-bullet").each(function(){
+		$(this).html(sname[$(this).index()]);
+	})
+</script>
+</body>
+</html>
