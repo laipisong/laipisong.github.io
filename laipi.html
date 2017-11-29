@@ -38,12 +38,13 @@ body {background:#eee;font-family:Helvetica Neue,Helvetica,Arial,sans-serif;font
 .navdl a i{position:absolute;top:0;left:0;display:block;width:18px;height:18px;border:1px solid #aab2bd;
 border-radius:100%;color:#aab2bd;text-align:center;font-style:normal;font-size:9px;line-height:15px;}
 .navdl a.hot i{border-color:#3498db;color:#3498db;}
-
-
-
+.ysbtn{width: 30px;height: 30px;border-radius: 50%;background: #111;position: fixed;top: 50px;left: 50px;z-index: 999;cursor: pointer;}
+.bodybg{background: #3f3f3f!important;}
+.btnbg{background: #eee!important;}
+.textcolor{color: #aaa!important;}
 </style>
 </head>
-<body>
+<body id="ysbody">
 
 
 <!--顶部搜索-->
@@ -52,7 +53,7 @@ border-radius:100%;color:#aab2bd;text-align:center;font-style:normal;font-size:9
 		<input type="text" name="word" id="ipt1" placeholder="世界这么大，我们彼此相遇。然后，东告西别。">
 	</form>
 </div>
-
+<div id="ysbtn" class="ysbtn"></div>
 
 <!-- Swiper -->
 <div class="swiper-container">
@@ -534,7 +535,6 @@ var swiper = new Swiper('.swiper-container', {
     mousewheelControl: true
 });
 </script>
-    
 <script type="text/javascript">
 $(function(){
 	//	添加序列号
@@ -562,11 +562,18 @@ $(function(){
 			var index=$(this).index();			
 		})
 	})
-	$('.btns span').click(function(){
-		$('.main').find('.item').hide().eq($(this).index()).show();
-	})
-
 })	
+</script>
+<script>
+//添加护眼模式
+$(function(){
+	$("#ysbtn").click(function () {
+		$("#ysbody").toggleClass("bodybg");
+		$("#ipt1").toggleClass("bodybg");
+		$("#ysbtn").toggleClass("btnbg");
+		$(".navdl a").toggleClass("textcolor");
+	})
+})
 </script>
 </body>
 </html>
